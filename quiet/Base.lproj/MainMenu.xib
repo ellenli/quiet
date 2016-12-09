@@ -24,25 +24,47 @@
                 <menuItem title="Quiet in 24 minutes..." enabled="NO" id="flp-iJ-bzB">
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
-                <menuItem title="Quiet now" id="5EW-hI-FzG">
+                <menuItem title="Quiet Now" id="5EW-hI-FzG">
                     <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="nowClicked:" target="Da2-nx-zm1" id="GPA-tC-Cc8"/>
+                    </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="Xyq-pk-MOZ"/>
-                <menuItem title="Start at Login" state="on" id="g9Y-YS-cxS">
+                <menuItem title="Calendar" id="Jbq-x7-e09">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                </menuItem>
-                <menuItem title="Calendar: x.ellen@gmail.com" id="Jbq-x7-e09">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="Calendar: x.ellen@gmail.com" id="w7X-jR-kkh">
+                    <menu key="submenu" title="Calendar" id="w7X-jR-kkh">
                         <items>
-                            <menuItem title="Sync now" id="oCb-P8-4FW">
+                            <menuItem title="Connect Account..." id="Srx-6d-Z9i">
                                 <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="connectClicked:" target="Da2-nx-zm1" id="Dg2-o6-XtU"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="d93-pa-LDX"/>
+                            <menuItem title="x.ellen@gmail.com" id="r7l-bz-9df">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem title="Sync Now" id="oCb-P8-4FW">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="syncClicked:" target="Da2-nx-zm1" id="XPR-N0-GFs"/>
+                                </connections>
                             </menuItem>
                             <menuItem title="Logout" id="VBz-Cn-N3L">
                                 <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="logoutClicked:" target="Da2-nx-zm1" id="XnH-KF-b5E"/>
+                                </connections>
                             </menuItem>
                         </items>
                     </menu>
+                </menuItem>
+                <menuItem title="Start at Login" state="on" id="g9Y-YS-cxS">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="autostartClicked:" target="Da2-nx-zm1" id="N13-00-yxv"/>
+                    </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="Xok-Wo-ngN"/>
                 <menuItem title="Quit" keyEquivalent="q" id="ccx-Qc-VJw">

@@ -10,12 +10,14 @@ import Cocoa
 
 class StatusMenuController: NSObject {
     
+// menu bar
+    
     @IBOutlet weak var statusMenu: NSMenu!
     
     let statusItem = NSStatusBar.system().statusItem(withLength:NSVariableStatusItemLength)
     
     override func awakeFromNib() {
-        // Insert code here to initialize your application
+        // app init
         statusItem.menu = statusMenu
         
         // statusItem.title = "Quiet"
@@ -24,6 +26,34 @@ class StatusMenuController: NSObject {
         statusItem.image = icon
         statusItem.menu = statusMenu
     }
+    
+// quiet
+    
+    @IBAction func nowClicked(_ sender: NSMenuItem) {
+        // enable now
+    }
+    
+// calendar settings
+    
+    @IBAction func connectClicked(_ sender: NSMenuItem) {
+        // connect to google
+    }
+    
+    @IBAction func syncClicked(_ sender: NSMenuItem) {
+        // sync
+    }
+    
+    @IBAction func logoutClicked(_ sender: NSMenuItem) {
+        // logout
+    }
+    
+// quiet app settings
+    
+    @IBAction func autostartClicked(_ sender: NSMenuItem) {
+        // toggle
+    }
+    
+// quit
     
     @IBAction func quitClicked(_ sender: NSMenuItem) {
         NSApplication.shared().terminate(self)
