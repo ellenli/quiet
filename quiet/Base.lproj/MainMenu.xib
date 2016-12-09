@@ -21,7 +21,31 @@
         </customObject>
         <menu id="PLL-YC-GVT">
             <items>
-                <menuItem title="Quit" id="ccx-Qc-VJw">
+                <menuItem title="Quiet in 24 minutes..." enabled="NO" id="flp-iJ-bzB">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Quiet now" id="5EW-hI-FzG">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="Xyq-pk-MOZ"/>
+                <menuItem title="Start at Login" state="on" id="g9Y-YS-cxS">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Calendar: x.ellen@gmail.com" id="Jbq-x7-e09">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Calendar: x.ellen@gmail.com" id="w7X-jR-kkh">
+                        <items>
+                            <menuItem title="Sync now" id="oCb-P8-4FW">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem title="Logout" id="VBz-Cn-N3L">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="Xok-Wo-ngN"/>
+                <menuItem title="Quit" keyEquivalent="q" id="ccx-Qc-VJw">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="quitClicked:" target="Da2-nx-zm1" id="y6f-EQ-J9n"/>
